@@ -118,7 +118,6 @@ GROUP BY H.CUS_ID,C.CUS_NAME,H.ORDER_NO";
 
 function get_d_order($Order_no = null, $Goods_id = null)
 {
-
     global $sql;
     $sql_str = "SELECT d_order.*, Goods_name.Goods_name FROM `d_order`,goods_name WHERE d_order.Goods_id = goods_name.Goods_id ";
     if (!empty($Order_no)) {
